@@ -9,23 +9,20 @@ using System.Windows.Forms;
 
 namespace Tangram.Shapes.Triangles.Big.Big1
 {
-    public class Big1Triangle270 : Shape
+    public class Small1Triangle45 : Shape
     {
-        public Big1Triangle270()
+        public Small1Triangle45()
         {
-            BackColor = Color.Blue;
-
-            Name = Constants.Big1Triangle270;
-            Type = ShapeTypes.BigTriangle1;
-            Size = new Size(Constants.SquareLength, Constants.SquareLength);
+            BackColor = Color.Yellow;
+            Name = Constants.Small1Triangle45;
+            Type = ShapeTypes.SmallTriangle1;
+            Size = new Size(Constants.Coefficient * 2, Constants.Coefficient * 2);
         }
-
         protected override void OnPaint(PaintEventArgs e)
         {
             using (var grp = new GraphicsPath())
             {
-                grp.AddPolygon(ShapeManager.GetTrianglePoints270(Size.Height));
-
+                grp.AddPolygon(ShapeManager.GetTrianglePoints45(Size.Height));
                 this.Region = new Region(grp);
             }
             base.OnPaint(e);
@@ -33,8 +30,10 @@ namespace Tangram.Shapes.Triangles.Big.Big1
 
         protected override void OnClick(EventArgs e)
         {
-            ShapeManager.SetNextShape(this, new Big1Triangle315());
+            ShapeManager.SetNextShape(this, new Small1Triangle90());
             base.OnClick(e);
         }
+
+
     }
 }

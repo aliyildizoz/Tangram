@@ -9,31 +9,32 @@ using System.Windows.Forms;
 
 namespace Tangram.Shapes.Triangles.Big.Big1
 {
-    public class Big1Triangle270 : Shape
+    public class Small2Triangle315 : Shape
     {
-        public Big1Triangle270()
+        public Small2Triangle315()
         {
-            BackColor = Color.Blue;
+            BackColor = Color.Lime;
 
-            Name = Constants.Big1Triangle270;
-            Type = ShapeTypes.BigTriangle1;
-            Size = new Size(Constants.SquareLength, Constants.SquareLength);
+            Name = Constants.Small2Triangle315;
+            Type = ShapeTypes.SmallTriangle2;
+            Size = new Size(Constants.Coefficient * 2, Constants.Coefficient * 2);
         }
 
         protected override void OnPaint(PaintEventArgs e)
         {
             using (var grp = new GraphicsPath())
             {
-                grp.AddPolygon(ShapeManager.GetTrianglePoints270(Size.Height));
+                grp.AddPolygon(ShapeManager.GetTrianglePoints315(Size.Height));
 
                 this.Region = new Region(grp);
             }
             base.OnPaint(e);
         }
 
+
         protected override void OnClick(EventArgs e)
         {
-            ShapeManager.SetNextShape(this, new Big1Triangle315());
+            ShapeManager.SetNextShape(this, new Small2Triangle0());
             base.OnClick(e);
         }
     }

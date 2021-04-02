@@ -120,6 +120,54 @@
     <Compile Include="Shapes\Triangles\Big\Big2\Big2Triangle90.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small1\Small1Triangle0.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small1\Small1Triangle135.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small1\Small1Triangle180.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small1\Small1Triangle225.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small1\Small1Triangle270.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small1\Small1Triangle315.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small1\Small1Triangle45.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small1\Small1Triangle90.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small2\Small2Triangle0.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small2\Small2Triangle135.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small2\Small2Triangle180.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small2\Small2Triangle225.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small2\Small2Triangle270.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small2\Small2Triangle315.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small2\Small2Triangle45.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Small\Small2\Small2Triangle90.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -146,8 +194,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Shapes\Triangles\Small\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

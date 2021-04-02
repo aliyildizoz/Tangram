@@ -10,25 +10,13 @@ namespace Tangram.Shapes
 {
     public class ShapeManager
     {
-        public static void SetNextShape(Shape currentSahape, string nextShapeName)
+        public static void SetNextShape(Shape currentSahape, Shape nextShapeName)
         {
-
-            foreach (Control control in Application.OpenForms[0].Controls)
-            {
-                if (control is Shape)
-                {
-                    var shape = (Shape)(control);
-                    if (shape.Type == currentSahape.Type)
-                    {
-                        if (shape.Name == nextShapeName)
-                        {
-                            currentSahape.Visible = false;
-                            shape.Visible = true;
-                            shape.Location = currentSahape.Location;
-                        }
-                    }
-                }
-            }
+            Form mainForm = Application.OpenForms[0];
+            nextShapeName.Location = currentSahape.Location;
+            mainForm.Controls.Remove(currentSahape);
+            mainForm.Controls.Add(nextShapeName);
+            ControlExtension.Draggable(nextShapeName, true);
         }
 
         public static PointF[] GetTrianglePoints0(int size)
@@ -45,7 +33,7 @@ namespace Tangram.Shapes
         }
         public static PointF[] GetTrianglePoints135(int size)
         {
-            return new PointF[] { new PointF(0, 0), new PointF(0, size), new PointF(size/2, size/2) };
+            return new PointF[] { new PointF(0, 0), new PointF(0, size), new PointF(size / 2, size / 2) };
         }
         public static PointF[] GetTrianglePoints180(int size)
         {

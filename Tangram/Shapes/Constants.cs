@@ -30,5 +30,24 @@ namespace Tangram.Shapes
         public static string Big2Triangle225 = nameof(Big2Triangle225);
         public static string Big2Triangle270 = nameof(Big2Triangle270);
         public static string Big2Triangle315 = nameof(Big2Triangle315);
+
+        //Small1
+        public static string Small1Triangle0 = nameof(Small1Triangle0);
+        public static string Small1Triangle45 = nameof(Small1Triangle45);
+        public static string Small1Triangle90 = nameof(Small1Triangle90);
+        public static string Small1Triangle135 = nameof(Small1Triangle135);
+        public static string Small1Triangle180 = nameof(Small1Triangle180);
+        public static string Small1Triangle225 = nameof(Small1Triangle225);
+        public static string Small1Triangle270 = nameof(Small1Triangle270);
+        public static string Small1Triangle315 = nameof(Small1Triangle315);
+        //Small2
+        public static string Small2Triangle0 = nameof(Small2Triangle0);
+        public static string Small2Triangle45 = nameof(Small2Triangle45);
+        public static string Small2Triangle90 = nameof(Small2Triangle90);
+        public static string Small2Triangle135 = nameof(Small2Triangle135);
+        public static string Small2Triangle180 = nameof(Small2Triangle180);
+        public static string Small2Triangle225 = nameof(Small2Triangle225);
+        public static string Small2Triangle270 = nameof(Small2Triangle270);
+        public static string Small2Triangle315 = nameof(Small2Triangle315);
     }
 }

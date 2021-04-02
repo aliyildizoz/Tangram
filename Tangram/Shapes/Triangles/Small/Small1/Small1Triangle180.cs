@@ -9,14 +9,14 @@ using System.Windows.Forms;
 
 namespace Tangram.Shapes.Triangles.Big.Big1
 {
-    public class Big1Triangle270 : Shape
+    public class Small1Triangle180 : Shape
     {
-        public Big1Triangle270()
+        public Small1Triangle180()
         {
-            BackColor = Color.Blue;
+            BackColor = Color.Yellow;
 
-            Name = Constants.Big1Triangle270;
-            Type = ShapeTypes.BigTriangle1;
+            Name = Constants.Small1Triangle180;
+            Type = ShapeTypes.SmallTriangle1;
             Size = new Size(Constants.SquareLength, Constants.SquareLength);
         }
 
@@ -24,7 +24,7 @@ namespace Tangram.Shapes.Triangles.Big.Big1
         {
             using (var grp = new GraphicsPath())
             {
-                grp.AddPolygon(ShapeManager.GetTrianglePoints270(Size.Height));
+                grp.AddPolygon(ShapeManager.GetTrianglePoints180(Size.Height));
 
                 this.Region = new Region(grp);
             }
@@ -33,7 +33,7 @@ namespace Tangram.Shapes.Triangles.Big.Big1
 
         protected override void OnClick(EventArgs e)
         {
-            ShapeManager.SetNextShape(this, new Big1Triangle315());
+            ShapeManager.SetNextShape(this, new Small1Triangle225());
             base.OnClick(e);
         }
     }

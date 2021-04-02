@@ -33,7 +33,7 @@ namespace Tangram.Shapes.Triangles.Big.Big1
 
         protected override void OnClick(EventArgs e)
         {
-            ShapeManager.SetNextShape(this, Constants.Big1Triangle225);
+            ShapeManager.SetNextShape(this, new Big1Triangle225());
             base.OnClick(e);
         }
     }

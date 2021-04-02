@@ -1,22 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Tangram.Shapes.Triangles.Big.Big1
 {
-    public class Big2Triangle225 : Shape
+    public class Small1Triangle0 : Shape
     {
-        public Big2Triangle225()
+        public Small1Triangle0()
         {
-            BackColor = Color.HotPink;
+            BackColor = Color.Yellow;
 
-            Name = Constants.Big2Triangle225;
-            Type = ShapeTypes.BigTriangle2;
+            Name = Constants.Small1Triangle0;
+            Type = ShapeTypes.SmallTriangle1;
             Size = new Size(Constants.Coefficient * 2, Constants.Coefficient * 2);
         }
 
@@ -24,7 +20,7 @@ namespace Tangram.Shapes.Triangles.Big.Big1
         {
             using (var grp = new GraphicsPath())
             {
-                grp.AddPolygon(ShapeManager.GetTrianglePoints225(Size.Height));
+                grp.AddPolygon(ShapeManager.GetTrianglePoints0(Size.Height));
 
                 this.Region = new Region(grp);
             }
@@ -33,7 +29,7 @@ namespace Tangram.Shapes.Triangles.Big.Big1
 
         protected override void OnClick(EventArgs e)
         {
-            ShapeManager.SetNextShape(this, new Big2Triangle270());
+            ShapeManager.SetNextShape(this, new Small1Triangle45());
             base.OnClick(e);
         }
     }
