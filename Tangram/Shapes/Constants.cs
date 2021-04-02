@@ -48,5 +48,9 @@ namespace Tangram.Shapes
         public static string Small2Triangle225 = nameof(Small2Triangle225);
         public static string Small2Triangle270 = nameof(Small2Triangle270);
         public static string Small2Triangle315 = nameof(Small2Triangle315);
+
+        //Square
+        public static string Square0 = nameof(Square0);
+        public static string Square45 = nameof(Square45);
     }
 }
