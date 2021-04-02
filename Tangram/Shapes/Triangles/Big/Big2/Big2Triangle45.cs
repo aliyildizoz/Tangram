@@ -13,7 +13,7 @@ namespace Tangram.Shapes.Triangles.Big.Big1
     {
         public Big2Triangle45()
         {
-            BackColor = Color.Blue;
+            BackColor = Color.HotPink;
             Name = Constants.Big2Triangle45;
             Type = ShapeTypes.BigTriangle2;
             Size = new Size(Constants.Sqrt2Lenght, Constants.Sqrt2Lenght);
@@ -22,12 +22,7 @@ namespace Tangram.Shapes.Triangles.Big.Big1
         {
             using (var grp = new GraphicsPath())
             {
-                grp.AddPolygon(new Point[]
-                {
-                    new Point(Constants.Sqrt2Lenght/2,Constants.Sqrt2Lenght/2),
-                    new Point(Constants.Sqrt2Lenght,0),
-                    new Point(0,0)
-                });
+                grp.AddPolygon(ShapeManager.GetTrianglePoints45(Size.Height));
                 this.Region = new Region(grp);
             }
             base.OnPaint(e);

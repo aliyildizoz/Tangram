@@ -24,13 +24,7 @@ namespace Tangram.Shapes.Triangles.Big.Big1
         {
             using (var grp = new GraphicsPath())
             {
-                grp.AddPolygon(new Point[]
-                {
-                    new Point(Constants.SquareLength,0),
-                    new Point(Constants.SquareLength,Constants.SquareLength),
-                    new Point(0,Constants.SquareLength)
-
-                });
+                grp.AddPolygon(ShapeManager.GetTrianglePoints90(Size.Height));
 
                 this.Region = new Region(grp);
             }
