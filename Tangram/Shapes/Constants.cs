@@ -62,5 +62,9 @@ namespace Tangram.Shapes
         //Square
         public static string Square0 = nameof(Square0);
         public static string Square45 = nameof(Square45);
+
+        //ParallelSquare
+        public static string ParallelSquare45 = nameof(ParallelSquare45);
+
     }
 }
