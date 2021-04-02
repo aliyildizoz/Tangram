@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Drawing.Drawing2D;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tangram.Shapes.Triangles.Big.Big1;
 
-namespace Tangram.Shapes.Triangles.Big.Big1
+namespace Tangram.Shapes.Triangles.Big.Big2
 {
     public class Big2Triangle225 : Shape
     {

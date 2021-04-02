@@ -10,6 +10,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tangram.Shapes;
 using Tangram.Shapes.Triangles.Big.Big1;
+using Tangram.Shapes.Triangles.Big.Big2;
+using Tangram.Shapes.Triangles.Small.Small1;
+using Tangram.Shapes.Triangles.Small.Small2;
 
 namespace Tangram
 {

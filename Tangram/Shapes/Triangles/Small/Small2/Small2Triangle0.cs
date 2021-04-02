@@ -2,8 +2,9 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 using System.Windows.Forms;
+using Tangram.Shapes.Triangles.Big.Big1;
 
-namespace Tangram.Shapes.Triangles.Big.Big1
+namespace Tangram.Shapes.Triangles.Small.Small2
 {
     public class Small2Triangle0 : Shape
     {
