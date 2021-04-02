@@ -16,7 +16,7 @@ namespace Tangram.Shapes.Triangles.Big.Big1
             BackColor = Color.Yellow;
             Name = Constants.Small1Triangle45;
             Type = ShapeTypes.SmallTriangle1;
-            Size = new Size(Constants.Coefficient * 2, Constants.Coefficient * 2);
+            Size = new Size(Constants.SquareLength/2, Constants.SquareLength/2);
         }
         protected override void OnPaint(PaintEventArgs e)
         {

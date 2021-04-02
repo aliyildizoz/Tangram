@@ -13,7 +13,8 @@ namespace Tangram.Shapes.Triangles.Big.Big1
 
             Name = Constants.Small1Triangle0;
             Type = ShapeTypes.SmallTriangle1;
-            Size = new Size(Constants.Coefficient * 2, Constants.Coefficient * 2);
+            Size = new Size(Constants.Coefficient / 2, Constants.Coefficient / 2);
+         
         }
 
         protected override void OnPaint(PaintEventArgs e)

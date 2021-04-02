@@ -9,11 +9,12 @@ namespace Tangram.Shapes.Triangles.Big.Big1
     {
         public Big2Triangle0()
         {
-            BackColor = Color.Blue;
+            BackColor = Color.HotPink;
 
             Name = Constants.Big2Triangle0;
             Type = ShapeTypes.BigTriangle2;
-            Size = new Size(Constants.SquareLength, Constants.SquareLength);
+            Size = new Size(Constants.Coefficient, Constants.Coefficient);
+
         }
 
         protected override void OnPaint(PaintEventArgs e)
