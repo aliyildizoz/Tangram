@@ -126,6 +126,30 @@
     <Compile Include="Shapes\Triangles\Big\Big2\Big2Triangle90.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Shapes\Triangles\Middle\MiddleTriangle0.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Middle\MiddleTriangle135.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Middle\MiddleTriangle180.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Middle\MiddleTriangle225.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Middle\MiddleTriangle270.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Middle\MiddleTriangle315.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Middle\MiddleTriangle45.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\Triangles\Middle\MiddleTriangle90.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Shapes\Triangles\Small\Small1\Small1Triangle0.cs">
       <SubType>Component</SubType>
     </Compile>
