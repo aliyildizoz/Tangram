@@ -12,11 +12,15 @@ namespace Tangram.Shapes
     {
         public static void SetNextShape(Shape currentSahape, Shape nextShapeName)
         {
-            Form mainForm = Application.OpenForms[0];
-            nextShapeName.Location = currentSahape.Location;
-            mainForm.Controls.Remove(currentSahape);
-            mainForm.Controls.Add(nextShapeName);
-            ControlExtension.Draggable(nextShapeName, true);
+            if (!currentSahape.ignoreClick)
+            {
+                Form mainForm = Application.OpenForms[0];
+                nextShapeName.Location = currentSahape.Location;
+                mainForm.Controls.Remove(currentSahape);
+                mainForm.Controls.Add(nextShapeName);
+                ControlExtension.Draggable(nextShapeName, true);
+            }
+
         }
 
         public static PointF[] GetTrianglePoints0(int size)

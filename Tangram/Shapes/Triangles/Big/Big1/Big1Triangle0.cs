@@ -14,7 +14,6 @@ namespace Tangram.Shapes.Triangles.Big.Big1
             Name = Constants.Big1Triangle0;
             Type = ShapeTypes.BigTriangle1;
             Size = new Size(Constants.Coefficient, Constants.Coefficient);
-            
         }
 
         protected override void OnPaint(PaintEventArgs e)
@@ -22,7 +21,7 @@ namespace Tangram.Shapes.Triangles.Big.Big1
             using (var grp = new GraphicsPath())
             {
                 grp.AddPolygon(ShapeManager.GetTrianglePoints0(Size.Height));
-
+                
                 this.Region = new Region(grp);
             }
             base.OnPaint(e);
