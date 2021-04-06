@@ -18,11 +18,11 @@ namespace Tangram.Shapes.Square
             Name = Constants.Square45;
             Type = ShapeTypes.Square;
             Size = new Size(Constants.Coefficient / 2, Constants.Coefficient / 2);
-
         }
         
         protected override void OnClick(EventArgs e)
         {
+            
             ShapeManager.SetNextShape(this, new Square45());
             base.OnClick(e);
         }

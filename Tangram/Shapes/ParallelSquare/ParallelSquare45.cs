@@ -19,7 +19,7 @@ namespace Tangram.Shapes.ParallelSquare
             Name = Constants.ParallelSquare45;
             Type = ShapeTypes.ParallelSquare;
             Size = new Size(Constants.SquareLength / 4, (Constants.SquareLength / 4) * 3);
-            Location = new Point(Height, 0);
+            Location = new Point(Constants.FirstLocation.X + Height, Constants.FirstLocation.Y);
 
         }
         protected override void OnPaint(PaintEventArgs e)

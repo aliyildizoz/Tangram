@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,6 +11,8 @@ namespace Tangram.Shapes
     public class Constants
     {
         public static int SquareLength = 300;
+        public static Point FirstLocation = new Point(20,20);
+        
         public static int Coefficient => Convert.ToInt32(Math.Floor(SquareLength / Math.Sqrt(2)));
         //Big1
         public static string Big1Triangle0 = nameof(Big1Triangle0);

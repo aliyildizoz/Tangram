@@ -28,6 +28,17 @@ namespace Tangram.Shapes
             }
             base.OnMouseMove(e);
         }
-        
+
+        public virtual Point[] LocationPoints()
+        {
+            return new Point[]
+            {
+                new Point(Location.X, Location.Y),
+                new Point(Right, Location.Y),
+                new Point(Right, Bottom),
+                new Point(Location.X, Bottom)
+            };
+        }
+
     }
 }

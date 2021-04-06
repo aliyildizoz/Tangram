@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AForge;
 using Tangram.Shapes;
 using Tangram.Shapes.ParallelSquare;
 using Tangram.Shapes.Square;
@@ -28,41 +29,18 @@ namespace Tangram
 
         private void MainForm_Load(object sender, EventArgs e)
         {
-            
+            Game.Start();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Big1Triangle135 big1Triangle135 = new Big1Triangle135();
-            Big2Triangle45 big2Triangle45 = new Big2Triangle45();
-            Small1Triangle225 small1Triangle225 = new Small1Triangle225();
-            Small2Triangle315 small1Triangle315 = new Small2Triangle315();
-            Square45 square45 = new Square45();
-            MiddleTriangle90 middleTriangle90 = new MiddleTriangle90();
-            ParallelSquare45 parallelSquare45 = new ParallelSquare45();
-
-            this.Controls.Add(big1Triangle135);
-            this.Controls.Add(big2Triangle45);
-            this.Controls.Add(small1Triangle225);
-            this.Controls.Add(small1Triangle315);
-            this.Controls.Add(square45);
-            this.Controls.Add(middleTriangle90);
-            this.Controls.Add(parallelSquare45);
-            
-            ControlExtension.Draggable(big1Triangle135, true);
-            ControlExtension.Draggable(big2Triangle45, true);
-            ControlExtension.Draggable(small1Triangle315, true);
-            ControlExtension.Draggable(small1Triangle225, true);
-            ControlExtension.Draggable(square45, true);
-            ControlExtension.Draggable(middleTriangle90, true);
-            ControlExtension.Draggable(parallelSquare45, true);
 
 
         }
 
 
 
-        
+
     }
 }
 
