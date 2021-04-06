@@ -13,8 +13,8 @@ namespace Tangram.Shapes.Triangles.Middle
 
             Name = Constants.MiddleTriangle90;
             Type = ShapeTypes.MiddleTriangle;
-             Size = new Size(Constants.SquareLength / 2, Constants.SquareLength / 2);
-            Location = new Point(Constants.FirstLocation.X + +Constants.SquareLength / 2, Constants.FirstLocation.Y + Constants.SquareLength / 2);
+            Size = new Size(Constants.SquareLength / 2, Constants.SquareLength / 2);
+            Location = new Point(Constants.ShapesFirstLocation.X + +Constants.SquareLength / 2, Constants.ShapesFirstLocation.Y + Constants.SquareLength / 2);
         }
 
         protected override void OnPaint(PaintEventArgs e)

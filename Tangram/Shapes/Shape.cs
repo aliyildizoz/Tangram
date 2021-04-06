@@ -12,6 +12,7 @@ namespace Tangram.Shapes
         public Shape()
         {
             this.BorderStyle = BorderStyle.FixedSingle;
+            
         }
 
         protected override void OnMouseUp(MouseEventArgs e)

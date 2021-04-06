@@ -19,6 +19,14 @@ namespace Tangram.Shapes
                 mainForm.Controls.Remove(currentSahape);
                 mainForm.Controls.Add(nextShapeName);
                 ControlExtension.Draggable(nextShapeName, true);
+                
+                foreach (Control mainFormControl in mainForm.Controls)
+                {
+                    if (mainFormControl is Level)
+                    {
+                        mainFormControl.SendToBack();
+                    }
+                }
             }
 
         }
