@@ -12,5 +12,6 @@ namespace Tangram.Shapes
         public int Level { get; set; }
         public PointF[] Points { get; set; }
         public Size Size { get; set; }
+        public string Name { get; set; }
     }
 }

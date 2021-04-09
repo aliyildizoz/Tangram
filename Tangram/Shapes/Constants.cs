@@ -12,7 +12,7 @@ namespace Tangram.Shapes
     {
         public static int SquareLength = 300;
         public static Point ShapesFirstLocation = new Point(100, 100);
-        public static Point LevelLocation = new Point(500, 100);
+        public static Point LevelLocation = new Point(450, 100);
         public static int LengthUnit = SquareLength / 4;
 
         public static int Coefficient => Convert.ToInt32(Math.Floor(SquareLength / Math.Sqrt(2)));

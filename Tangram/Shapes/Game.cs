@@ -50,7 +50,8 @@ namespace Tangram.Shapes
                         new PointF(Constants.LengthUnit * 6, 2 * Constants.LengthUnit),
                         new PointF(Constants.LengthUnit * 4, 0),
                         new PointF(Constants.LengthUnit * 3, Constants.LengthUnit)
-                    }
+                    },
+                    Name = "Heart"
                 }
             },
             {
@@ -58,19 +59,17 @@ namespace Tangram.Shapes
                 new LevelPair
                 {
                     Level = 2,
-                    Size = new Size(Constants.CoefficientUnit*4, Constants.CoefficientUnit*4),
+                    Size = new Size(Constants.CoefficientUnit*4, Constants.CoefficientUnit*3),
                     Points = new PointF[]
                     {
-                        new PointF(Constants.CoefficientUnit + Constants.CoefficientUnit / 2, 0),
-                        new PointF(Constants.CoefficientUnit * 2 + Constants.CoefficientUnit / 2, 0),
-                        new PointF(Constants.CoefficientUnit * 2 + Constants.CoefficientUnit / 2, Constants.CoefficientUnit),
-                        new PointF(Constants.CoefficientUnit * 3, Constants.CoefficientUnit),
-                        new PointF(Constants.CoefficientUnit * 4, Constants.CoefficientUnit * 2),
-                        new PointF(Constants.CoefficientUnit * 2, Constants.CoefficientUnit * 4),
-                        new PointF(0, Constants.CoefficientUnit * 2),
-                        new PointF(Constants.CoefficientUnit, Constants.CoefficientUnit),
-                        new PointF(Constants.CoefficientUnit + Constants.CoefficientUnit / 2, Constants.CoefficientUnit),
-                    }
+                        new PointF(0 , Constants.CoefficientUnit),
+                        new PointF(Constants.CoefficientUnit, 0),
+                        new PointF(Constants.CoefficientUnit*3, 0),
+                        new PointF(Constants.CoefficientUnit*4, Constants.CoefficientUnit),
+                        new PointF(Constants.CoefficientUnit*2, Constants.CoefficientUnit*3),
+                        new PointF(Constants.CoefficientUnit*2, Constants.CoefficientUnit*3),
+                    },
+                    Name = "Diamond"
                 }
             },
             {
@@ -85,7 +84,8 @@ namespace Tangram.Shapes
                         new PointF(Constants.CoefficientUnit*4,0),
                         new PointF(Constants.CoefficientUnit*4,Constants.CoefficientUnit*2),
                         new PointF(0,Constants.CoefficientUnit*2)
-                    }
+                    },
+                    Name = "Rectangle"
                 }
             },
             {
@@ -106,7 +106,8 @@ namespace Tangram.Shapes
                         new PointF(Constants.CoefficientUnit,Constants.CoefficientUnit),
                         new PointF(0,Constants.CoefficientUnit*2),
                         new PointF(0,Constants.CoefficientUnit)
-                    }
+                    },
+                    Name = "T-Shirt"
                 }
             },
             {
@@ -127,7 +128,8 @@ namespace Tangram.Shapes
                         new PointF(0,Constants.LengthUnit*6),
                         new PointF(Constants.LengthUnit,Constants.LengthUnit*5),
                         new PointF(Constants.LengthUnit,Constants.LengthUnit),
-                    }
+                    },
+                    Name = "Roket"
                 }
             },
             {
@@ -151,7 +153,8 @@ namespace Tangram.Shapes
                         new PointF(0,Constants.CoefficientUnit*2+Constants.LengthUnit*2),
                         new PointF(0,Constants.LengthUnit*2),
                         new PointF((Constants.CoefficientUnit*3-Constants.SquareLength)/2,Constants.LengthUnit*2),
-                    }
+                    },
+                    Name = "Home"
                 }
             },
             {
@@ -172,7 +175,8 @@ namespace Tangram.Shapes
                         new PointF(Constants.CoefficientUnit*2- Constants.CoefficientUnit/2,Constants.CoefficientUnit),
                         new PointF(Constants.CoefficientUnit,Constants.CoefficientUnit),
                         new PointF(0,Constants.CoefficientUnit*2),
-                    }
+                    },
+                    Name = "T letter "
                 }
             },
             {
@@ -180,27 +184,48 @@ namespace Tangram.Shapes
                 new LevelPair
                 {
                     Level = 8,
-                    Size = new Size(Constants.LengthUnit*6+Convert.ToInt16(Math.Sqrt(Constants.CoefficientUnit/2)),Constants.CoefficientUnit*7/2),
+                    Size = new Size(Constants.LengthUnit*7,Constants.CoefficientUnit*3+Constants.LengthUnit),
                     Points = new PointF[]
                     {
-                        new PointF(0,Constants.CoefficientUnit*7/2-+Convert.ToInt16(Math.Sqrt(Constants.CoefficientUnit))),
-                        new PointF(Constants.LengthUnit*6,Constants.CoefficientUnit*7/2 - Convert.ToInt16(Math.Sqrt(Constants.CoefficientUnit))),
-                        new PointF(Constants.LengthUnit*6+Convert.ToInt16(Math.Sqrt(Constants.CoefficientUnit/2))-Constants.CoefficientUnit*2,Constants.CoefficientUnit),
+                        new PointF(0,Constants.CoefficientUnit*3-Constants.LengthUnit),
+                        new PointF(Constants.LengthUnit*6,Constants.CoefficientUnit*3-Constants.LengthUnit),
+                        new PointF(Constants.LengthUnit*7-Constants.CoefficientUnit*2,Constants.CoefficientUnit),
 
-                        new PointF(Constants.LengthUnit*6+Convert.ToInt16(Math.Sqrt(Constants.CoefficientUnit/2))-Constants.CoefficientUnit,0),
-                        new PointF(Constants.LengthUnit*6+Convert.ToInt16(Math.Sqrt(Constants.CoefficientUnit/2)),Constants.CoefficientUnit),
-                       
-                        new PointF(Constants.LengthUnit*6+Convert.ToInt16(Math.Sqrt(Constants.CoefficientUnit/2))-Constants.CoefficientUnit,Constants.CoefficientUnit),
-                        new PointF(Constants.LengthUnit*6+Convert.ToInt16(Math.Sqrt(Constants.CoefficientUnit/2)),Constants.CoefficientUnit*2),
-                        new PointF(Constants.LengthUnit*6+Convert.ToInt16(Math.Sqrt(Constants.CoefficientUnit/2)),Constants.CoefficientUnit*3),
-                        new PointF(Constants.LengthUnit*6,Constants.CoefficientUnit*7/2),
-                        new PointF(Constants.LengthUnit*2,Constants.CoefficientUnit*7/2),
-                    }
+                        new PointF(Constants.LengthUnit*7-Constants.CoefficientUnit,0),
+                        new PointF(Constants.LengthUnit*7,Constants.CoefficientUnit),
+
+                        new PointF(Constants.LengthUnit*7-Constants.CoefficientUnit,Constants.CoefficientUnit),
+                        new PointF(Constants.LengthUnit*7,Constants.CoefficientUnit*2),
+                        new PointF(Constants.LengthUnit*7,Constants.CoefficientUnit*3),
+                        new PointF(Constants.LengthUnit*6,Constants.CoefficientUnit*3+Constants.LengthUnit),
+                        new PointF(Constants.LengthUnit*2,Constants.CoefficientUnit*3+Constants.LengthUnit),
+                    },
+                    Name = "Duck"
+                }
+            },
+            {
+                9,
+                new LevelPair
+                {
+                    Level = 9,
+                    Size = new Size(Constants.CoefficientUnit*6,Constants.CoefficientUnit*2),
+                    Points = new PointF[]
+                    {
+                        new PointF(0,Constants.CoefficientUnit),
+                        new PointF(Constants.CoefficientUnit*2,Constants.CoefficientUnit),
+                        new PointF(Constants.CoefficientUnit*2,0),
+                        new PointF(Constants.CoefficientUnit*5,0),
+                        new PointF(Constants.CoefficientUnit*5,Constants.CoefficientUnit),
+                        new PointF(Constants.CoefficientUnit*6,Constants.CoefficientUnit),
+                        new PointF(Constants.CoefficientUnit*5,Constants.CoefficientUnit*2),
+                        new PointF(Constants.CoefficientUnit,Constants.CoefficientUnit*2),
+                    },
+                    Name = "Ferryboat"
                 }
             }
         };
 
-        public static int Level = 8;
+        public static int Level = 1;
 
         public static void NextLevel()
         {
