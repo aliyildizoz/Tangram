@@ -15,14 +15,14 @@ namespace Tangram.Shapes
         {
             BackColor = Color.LightGray;
             Location = Constants.LevelLocation;
-            Size = new Size(Constants.Unit * 6, Constants.Unit * 5);
+            Size = Game.CurrentLevel.Size;
         }
 
         protected override void OnPaint(PaintEventArgs e)
         {
             using (var grp = new GraphicsPath())
             {
-                grp.AddPolygon(Game.CurrentLevel);
+                grp.AddPolygon(Game.CurrentLevel.Points);
 
                 this.Region = new Region(grp);
             }

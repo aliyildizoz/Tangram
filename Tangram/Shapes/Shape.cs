@@ -23,13 +23,15 @@ namespace Tangram.Shapes
 
         protected override void OnMouseMove(MouseEventArgs e)
         {
+            this.BringToFront();
+           
             if (e.Button == MouseButtons.Left)
             {
                 ignoreClick = true;
             }
             base.OnMouseMove(e);
         }
-
+        
         public virtual Point[] LocationPoints()
         {
             return new Point[]

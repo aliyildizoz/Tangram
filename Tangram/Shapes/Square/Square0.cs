@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Tangram.Shapes.Square
 {
-    public class Square0 : Shape
+    public class Square0 : Shape, ISetFirstLocation
     {
         public Square0()
         {
@@ -22,9 +22,13 @@ namespace Tangram.Shapes.Square
         
         protected override void OnClick(EventArgs e)
         {
-            
             ShapeManager.SetNextShape(this, new Square45());
             base.OnClick(e);
+        }
+
+        public void SetFirstLocation()
+        {
+            ShapeManager.SetNextShape(this, new Square45());
         }
     }
 }

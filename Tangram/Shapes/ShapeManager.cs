@@ -18,19 +18,12 @@ namespace Tangram.Shapes
                 nextShapeName.Location = currentSahape.Location;
                 mainForm.Controls.Remove(currentSahape);
                 mainForm.Controls.Add(nextShapeName);
+                nextShapeName.BringToFront();
                 ControlExtension.Draggable(nextShapeName, true);
-                
-                foreach (Control mainFormControl in mainForm.Controls)
-                {
-                    if (mainFormControl is Level)
-                    {
-                        mainFormControl.SendToBack();
-                    }
-                }
             }
 
         }
-
+            
         public static PointF[] GetTrianglePoints0(int size)
         {
             return new PointF[] { new PointF(0, 0), new PointF(size, size), new PointF(0, size) };

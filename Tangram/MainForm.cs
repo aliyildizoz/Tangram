@@ -27,19 +27,42 @@ namespace Tangram
             InitializeComponent();
         }
 
-        private void MainForm_Load(object sender, EventArgs e)
+        private void btnStart_Click(object sender, EventArgs e)
         {
             Game.Start();
+            btnStart.Enabled = false;
+            lblLevel.Text = Game.Level.ToString();
+            BtnSetVisible();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        
+        private void btnPreviousLevel_Click(object sender, EventArgs e)
         {
-            
+            Game.PreviousLevel();
+            lblLevel.Text = Game.Level.ToString();
         }
 
-
-
-
+        private void btnNextLevel_Click(object sender, EventArgs e)
+        {
+            Game.NextLevel();
+            lblLevel.Text = Game.Level.ToString();
+        }
+        public void BtnNextLevelEnable(bool enable=false)
+        {
+            btnNextLevel.Enabled = enable;
+        }
+        public void BtnPreviousLevelEnable(bool enable = false)
+        {
+            btnPreviousLevel.Enabled = enable;
+        }
+        public void BtnSetVisible()
+        {
+            btnNextLevel.Visible = true;
+            btnPreviousLevel.Visible = true;
+            btnPreviousLevel.Enabled = false;
+            lblLevel.Visible = true;
+            label1.Visible = true;
+            btnStart.Enabled = false;
+        }
     }
 }
 

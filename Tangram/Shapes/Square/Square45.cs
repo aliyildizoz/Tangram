@@ -10,7 +10,7 @@ using Tangram.Shapes.Triangles.Big.Big1;
 
 namespace Tangram.Shapes.Square
 {
-    public class Square45 : Shape
+    public class Square45 : Shape, ISetFirstLocation
     {
         public Square45()
         {
@@ -44,6 +44,11 @@ namespace Tangram.Shapes.Square
         {
             ShapeManager.SetNextShape(this, new Square0());
             base.OnClick(e);
+        }
+
+        public void SetFirstLocation()
+        {
+            ShapeManager.SetNextShape(this, new Square45());
         }
     }
 }
