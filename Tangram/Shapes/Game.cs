@@ -129,7 +129,7 @@ namespace Tangram.Shapes
                         new PointF(Constants.LengthUnit,Constants.LengthUnit*5),
                         new PointF(Constants.LengthUnit,Constants.LengthUnit),
                     },
-                    Name = "Roket"
+                    Name = "Rocket"
                 }
             },
             {
@@ -154,7 +154,7 @@ namespace Tangram.Shapes
                         new PointF(0,Constants.LengthUnit*2),
                         new PointF((Constants.CoefficientUnit*3-Constants.SquareLength)/2,Constants.LengthUnit*2),
                     },
-                    Name = "Home"
+                    Name = "Barn"
                 }
             },
             {
@@ -264,7 +264,7 @@ namespace Tangram.Shapes
             Small2Triangle315 small1Triangle315 = new Small2Triangle315();
             Square45 square45 = new Square45();
             MiddleTriangle90 middleTriangle90 = new MiddleTriangle90();
-            ParallelSquare45 parallelSquare45 = new ParallelSquare45();
+            ParallelSquare0 parallelSquare45 = new ParallelSquare0();
             Level level = new Level();
 
             mainForm.Controls.Add(big1Triangle135);

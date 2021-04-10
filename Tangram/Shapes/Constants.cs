@@ -70,7 +70,13 @@ namespace Tangram.Shapes
         public static string Square45 = nameof(Square45);
 
         //ParallelSquare
+        public static string ParallelSquare0= nameof(ParallelSquare0);
         public static string ParallelSquare45 = nameof(ParallelSquare45);
-
+        public static string ParallelSquare90 =  nameof(ParallelSquare90);
+        public static string ParallelSquare135 = nameof(ParallelSquare135);
+        public static string ParallelSquareM90 = nameof(ParallelSquareM90);
+        public static string ParallelSquareM135 = nameof(ParallelSquareM135);
+        public static string ParallelSquareM0 = nameof(ParallelSquareM0);
+        public static string ParallelSquareM45 = nameof(ParallelSquareM45);
     }
 }

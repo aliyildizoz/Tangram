@@ -72,7 +72,28 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Shapes\LevelPair.cs" />
+    <Compile Include="Shapes\ParallelSquare\ParallelSquare135.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\ParallelSquare\ParallelSquareM135.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\ParallelSquare\ParallelSquareM0.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\ParallelSquare\ParallelSquare90.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\ParallelSquare\ParallelSquare0.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Shapes\ParallelSquare\ParallelSquare45.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\ParallelSquare\ParallelSquareM90.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Shapes\ParallelSquare\ParallelSquareM45.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Shapes\Shape.cs">

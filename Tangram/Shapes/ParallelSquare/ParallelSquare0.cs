@@ -6,18 +6,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Tangram.Shapes.Square;
 
 namespace Tangram.Shapes.ParallelSquare
 {
-    public class ParallelSquare45 : Shape
+    public class ParallelSquare0 : Shape
     {
-        public ParallelSquare45()
+        public ParallelSquare0()
         {
             BackColor = Color.Aqua;
 
-            Name = Constants.ParallelSquare45;
+            Name = Constants.ParallelSquare0;
             Type = ShapeTypes.ParallelSquare;
-            Size = new Size(Constants.CoefficientUnit, Constants.CoefficientUnit*2);
+            Size = new Size(Constants.SquareLength / 4, (Constants.SquareLength / 4) * 3);
+            Location = new Point(Constants.ShapesFirstLocation.X + Height, Constants.ShapesFirstLocation.Y);
 
         }
         protected override void OnPaint(PaintEventArgs e)
@@ -26,10 +28,10 @@ namespace Tangram.Shapes.ParallelSquare
             {
                 grp.AddPolygon(new PointF[]
                 {
-                    new PointF(0,0 ),
-                    new PointF(Width,Width),
-                    new PointF( Width,Height),
-                    new PointF(0, Constants.CoefficientUnit)
+                    new PointF(Width,0 ),
+                    new PointF(0,Width),
+                    new PointF( 0,Height),
+                    new PointF(Width, Constants.SquareLength / 2)
 
                 });
                 this.Region = new Region(grp);
@@ -40,7 +42,7 @@ namespace Tangram.Shapes.ParallelSquare
 
         protected override void OnClick(EventArgs e)
         {
-            ShapeManager.SetNextShape(this, new ParallelSquareM45());
+            ShapeManager.SetNextShape(this, new ParallelSquareM0());
             base.OnClick(e);
         }
     }

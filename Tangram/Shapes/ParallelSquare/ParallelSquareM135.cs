@@ -9,15 +9,15 @@ using System.Windows.Forms;
 
 namespace Tangram.Shapes.ParallelSquare
 {
-    public class ParallelSquare45 : Shape
+    public class ParallelSquareM135 : Shape
     {
-        public ParallelSquare45()
+        public ParallelSquareM135()
         {
             BackColor = Color.Aqua;
 
-            Name = Constants.ParallelSquare45;
+            Name = Constants.ParallelSquareM135;
             Type = ShapeTypes.ParallelSquare;
-            Size = new Size(Constants.CoefficientUnit, Constants.CoefficientUnit*2);
+            Size = new Size(Constants.CoefficientUnit * 2, Constants.CoefficientUnit);
 
         }
         protected override void OnPaint(PaintEventArgs e)
@@ -27,9 +27,10 @@ namespace Tangram.Shapes.ParallelSquare
                 grp.AddPolygon(new PointF[]
                 {
                     new PointF(0,0 ),
-                    new PointF(Width,Width),
-                    new PointF( Width,Height),
-                    new PointF(0, Constants.CoefficientUnit)
+                    new PointF(Height,0),
+                    new PointF(Width,Height),
+                    new PointF( Height,Height)
+
 
                 });
                 this.Region = new Region(grp);
@@ -37,10 +38,9 @@ namespace Tangram.Shapes.ParallelSquare
             base.OnPaint(e);
         }
 
-
         protected override void OnClick(EventArgs e)
         {
-            ShapeManager.SetNextShape(this, new ParallelSquareM45());
+            ShapeManager.SetNextShape(this, new ParallelSquare0());
             base.OnClick(e);
         }
     }
