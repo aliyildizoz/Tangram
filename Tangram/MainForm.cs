@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AForge;
 using Tangram.Shapes;
 using Tangram.Shapes.ParallelSquare;
 using Tangram.Shapes.Square;

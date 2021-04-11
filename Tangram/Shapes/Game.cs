@@ -12,7 +12,6 @@ using Tangram.Shapes.Triangles.Big.Big2;
 using Tangram.Shapes.Triangles.Middle;
 using Tangram.Shapes.Triangles.Small.Small1;
 using Tangram.Shapes.Triangles.Small.Small2;
-using Point = AForge.Point;
 
 namespace Tangram.Shapes
 {
