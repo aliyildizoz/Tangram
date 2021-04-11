@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace Tangram.Shapes.Square
 {
-    public class Square0 : Shape, ISetFirstLocation
+    public class Square0 : Shape
     {
         public Square0()
         {
