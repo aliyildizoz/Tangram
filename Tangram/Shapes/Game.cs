@@ -274,7 +274,6 @@ namespace Tangram.Shapes
             mainForm.Controls.Add(middleTriangle90);
             mainForm.Controls.Add(parallelSquare45);
             mainForm.Controls.Add(level);
-            //level.SendToBack();
 
             ControlExtension.Draggable(big1Triangle135, true);
             ControlExtension.Draggable(big2Triangle45, true);

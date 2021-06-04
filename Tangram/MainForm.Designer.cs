@@ -49,7 +49,7 @@ namespace Tangram
             this.btnDeveloppers.Name = "btnDeveloppers";
             this.btnDeveloppers.Size = new System.Drawing.Size(213, 45);
             this.btnDeveloppers.TabIndex = 0;
-            this.btnDeveloppers.Text = "Geliştiriciler";
+            this.btnDeveloppers.Text = "Developers";
             this.btnDeveloppers.UseVisualStyleBackColor = true;
             this.btnDeveloppers.Click += new System.EventHandler(this.btnDeveloppers_Click);
             // 
@@ -71,7 +71,7 @@ namespace Tangram
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(213, 54);
             this.btnStart.TabIndex = 0;
-            this.btnStart.Text = "Oyuna başla";
+            this.btnStart.Text = "Play";
             this.btnStart.UseVisualStyleBackColor = true;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
@@ -90,7 +90,7 @@ namespace Tangram
             // btnPreviousLevel
             // 
             this.btnPreviousLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnPreviousLevel.Location = new System.Drawing.Point(240, 702);
+            this.btnPreviousLevel.Location = new System.Drawing.Point(259, 702);
             this.btnPreviousLevel.Name = "btnPreviousLevel";
             this.btnPreviousLevel.Size = new System.Drawing.Size(242, 54);
             this.btnPreviousLevel.TabIndex = 0;
@@ -159,6 +159,7 @@ namespace Tangram
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1320, 768);
             this.Controls.Add(this.lblNameOfShape);
             this.Controls.Add(this.lblLevel);
